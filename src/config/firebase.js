@@ -18,4 +18,7 @@ const firebaseConfig = {
 const gratefulProject = firebase.initializeApp(firebaseConfig);
 export const db = gratefulProject.firestore() 
 export const auth = gratefulProject.auth() 
+export const providers = {
+  google: firebase.auth.GoogleAuthProvider
+}
 
