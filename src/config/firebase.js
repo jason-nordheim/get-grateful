@@ -14,11 +14,14 @@ const firebaseConfig = {
   measurementId: "G-QBFGNWNBP8",
 };
 
+
+
 // Initialize Firebase
 const gratefulProject = firebase.initializeApp(firebaseConfig);
 export const db = gratefulProject.firestore() 
-export const auth = gratefulProject.auth() 
+export const auth = firebase.auth() 
 export const providers = {
-  google: firebase.auth.GoogleAuthProvider
+  google: () => firebase.auth.GoogleAuthProvider(), 
+  email: () => firebase.auth.EmailAuthProvider()
 }
 
