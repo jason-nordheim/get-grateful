@@ -1,13 +1,13 @@
 import React, { useReducer } from "react";
-import { GratefulContext } from "./GratefulContext";
+import { AppContext } from "./AppContext";
 
 /*
  * Higher Order component to Inject Global Application Context,
  */
-export const GratefulProvider = ({ reducer, initialState, children }) => (
+export const AppProvider = ({ reducer, initialState, children }) => (
   <GratefulContext.Provider value={useReducer(reducer, initialState)}>
     {children}
   </GratefulContext.Provider>
 );
 
-export default GratefulProvider;
+export default AppProvider;
