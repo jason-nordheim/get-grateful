@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoaderProvider, useLoading, BallTriangle } from '@agney/react-loading';
+import { BallTriangle } from '@agney/react-loading';
 
 import Header from './Header'
 import Feed from './Feed'
