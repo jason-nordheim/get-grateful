@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sarabun:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sarabun:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root {
   --blue-light: #C8E8E6;
   --blue-gray: #86AAAD;
@@ -18,3 +17,49 @@ h1, h2, h3, h4 ,h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+div#root {
+  height: 100vh;
+}
+
+main {
+  display: flex; 
+  flex: 1;
+  justify-content: center;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: var(--blue-gray);
+  border: none;
+  box-shadow: 2px 2px 2px darkslategray ;
+}
+button:hover {
+  box-shadow: none;
+  transition: 50ms ease-in-out; 
+  color: aliceblue;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  font-weight: lighter;
+  border-bottom: 1px solid darkslategray;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.app  {
+  display: flex; 
+  height: 100%;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+}
+
+.login {
+  padding: 1rem 2rem;
+  align-self: center; 
+  justify-self: center;
+}
