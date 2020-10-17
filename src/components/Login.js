@@ -1,14 +1,12 @@
 import React from 'react'
-import { useAuth } from '../hooks/useAuth'
+import { auth, providers } from '../config/firebase'
 
 function Login() {
-  const [user, loading, error, auth, providers] = useAuth() 
 
   const login = () => {
-    console.log('providers', JSON.stringify(providers));
-    auth.signInWithPopup(providers.google)
+    auth.signInWithPopup(providers.google()) 
       .then(console.log)
-      .catch(console.error)
+      .catch(console.log)
   }
 
   return (
