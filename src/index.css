@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sarabun:ital@0;1&display=swap');
+
+:root {
+  --blue-light: #C8E8E6;
+  --blue-gray: #86AAAD;
+  --eggshell: #F5F8EC;
+  --dark-brown: #2E2621;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sarabun', sans-serif;
+  color: var(--dark-brown);
+  background-color: var(--eggshell);
+}
+h1, h2, h3, h4 ,h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
