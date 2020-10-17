@@ -8,4 +8,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
  * @param auth firebase.auth.Auth instance for the app monitor
  * @returns [user(firebase.user||undefined), loading(boolean), error(firebase.auth.Error||undefined), auth (Firebase.auth), providers (ohject of providers)]
  */
-export const useAuth = () => [...useAuthState(auth), auth, providers]  // => [user, loading, error] 
+export const useAuth = () => [...useAuthState(auth)]  // => [user, loading, error] 
+
+// Usage Template: 
+// const [user, loading, error, auth, providers] = useAuth() 
